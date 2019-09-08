@@ -18,5 +18,8 @@ EXPOSE 5000
 # Define environment variable
 ENV NAME ITRAINSPARTANS
 
+#switching account 1001
+USER 1001
+
 # Run app.py when the container launches
 CMD ["python", "app.py"]
