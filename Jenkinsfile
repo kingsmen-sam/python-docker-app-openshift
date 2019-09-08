@@ -22,7 +22,7 @@ node{
      sh 'oc project itrainspartans'
      //sh 'oc new-app --name py-mani manee2k6/py-spartans'
       sh 'oc rollout latest dc/py-mani -o json' 
-     sh 'oc expose svc py-mani' 
+     //sh 'oc expose svc py-mani' 
     }
    
     stage('App deployed to Openshift environment') {
