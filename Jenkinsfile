@@ -22,6 +22,7 @@ node{
      sh 'oc project itrainspartans'
      //sh 'oc new-app --name py-mani manee2k6/py-spartans'
       sh 'oc rollout latest dc/py-mani -o json' 
+      sh 'oc rollout latest manee2k6/py-newrelic --name python --env NEWRELIC_LICENSE=xxxxxx NEWRELIC_APPNAME=pyapp'
      //sh 'oc expose svc py-mani' 
     }
    
