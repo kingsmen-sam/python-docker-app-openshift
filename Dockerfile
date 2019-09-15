@@ -16,7 +16,7 @@ RUN pip install -r requirements.txt
 #RUN pip install newrelic ( to avoid this layer, added newrelic inside requirement.txt)
 
 # Make port 80 available to the world outside this container
-EXPOSE 5000
+EXPOSE 7000
 
 # Define environment variable
 ENV NAME KINGSMAN
