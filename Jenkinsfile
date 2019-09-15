@@ -20,7 +20,7 @@ node{
    stage("App deployment started"){
      sh 'oc login --token=SijjKnLvecMVizFvfWNruibng-tM-P9xVdZx9QtBeAY --server=https://api.us-west-1.starter.openshift-online.com:6443'
      sh 'oc project python-app'
-     sh 'oc new-app --name python-app satyasaipavan/python-app'
+     //sh 'oc new-app --name python-app satyasaipavan/python-app'
       sh 'oc rollout latest dc/python-app -o json' 
      // sh 'oc rollout latest manee2k6/py-newrelic --name python \
          // --env NEWRELIC_LICENSE=a1869158b60fb11bebfa72898accacd1c76a7fe1 \
