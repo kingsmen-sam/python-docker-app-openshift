@@ -24,7 +24,7 @@ node{
       sh 'oc rollout latest dc/python-app -o json' 
      // sh 'oc rollout latest manee2k6/py-newrelic --name python \
          // --env NEWRELIC_LICENSE=a1869158b60fb11bebfa72898accacd1c76a7fe1 \
-          //      NEWRELIC_APPNAME=PyApp-Newrelic'
+          ////      NEWRELIC_APPNAME=PyApp-Newrelic'
      //sh 'oc expose svc py-mani' 
     }
    
