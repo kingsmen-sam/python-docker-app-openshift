@@ -10,7 +10,7 @@ node{
    }
    
    stage("Tag & Push image"){
-      withDockerRegistry(credentialsId: 'Satyadocker', url: 'https://cloud.docker.com/repository/docker/satyasaipavan/python-app')  {
+      withDockerRegistry(credentialsId: 'dockcred', url: 'https://cloud.docker.com/repository/docker/satyasaipavan/python-app')  {
           sh 'docker tag satyasaipavan/python-app satyasaipavan/python-app:dev'
           sh 'docker push satyasaipavan/python-app:dev'
           sh 'docker push satyasaipavan/python-app:latest'
